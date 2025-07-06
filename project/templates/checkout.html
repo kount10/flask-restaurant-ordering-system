@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <p>Subtotal: Rs. {{ total }}</p>
+    <p>Tax (8%): Rs. {{ tax }}</p>
+    <p>Discount (15%): Rs. {{ discount }}</p>
+    <p>Total Amount: Rs. {{ final_total }}</p>
+    <a href="/">Go Back to Menu</a>
+</body>
+</html>
